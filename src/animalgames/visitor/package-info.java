@@ -1,1 +1,1 @@
-package animalgames.visitor;
+package VisitorPattern;
