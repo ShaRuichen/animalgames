@@ -83,7 +83,7 @@ public class Observer {
         }
         System.out.println("----------------------------------------");
         }
-	
+}
 	
 //抽象成绩被观察
 abstract class RaceResult
