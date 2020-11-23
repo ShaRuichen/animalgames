@@ -1,5 +1,4 @@
-package archtec;
-
+package animalgames.strategy;
 public class CommandPattern {
 }
 //调用者（颁奖人）
