@@ -1,28 +1,19 @@
-package filter;
-
-import BusinessDelegate.Score;
+package animalgames.filter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class filter {
-    public static void main(String[] args){
+/**
+ * test实现类，通过对应操作实现对比赛人员信息的录入以及筛选（filter）查看
+ */
+public class Test {
+    public static void test(){
         List<Animal> animals = new ArrayList<Animal>();
 
         Scanner sc = new Scanner(System.in);
         System.out.println("请选择：1.录入参赛信息  2.查看(filter)参赛信息  3.退出");
         int option = sc.nextInt();
-
-/**        test
- *         animals.add(new Animal("asd","Male","highjump"));
- *         animals.add(new Animal("222","Female","highjump"));
- *         animals.add(new Animal("333","Male","longjump"));
- *         animals.add(new Animal("444","Male","highjump"));
- *         animals.add(new Animal("555","Male","marathon"));
- *         animals.add(new Animal("555","Male","longjump"));
- *         animals.add(new Animal("666","Female","100m"));
- */
 
         while (true){
             if (option == 1){
@@ -44,7 +35,6 @@ public class filter {
 
     /**
      * 打印list信息
-     * @param animals
      */
     public static void printinfo(List<Animal> animals){
         for(Animal animal:animals){
@@ -57,7 +47,6 @@ public class filter {
 
     /**
      * 输入参赛信息
-     * @param animals
      */
     public static void putinfo(List<Animal> animals){
         Scanner sc = new Scanner(System.in);
@@ -96,7 +85,6 @@ public class filter {
 
     /**
      * 根据选择输出参赛信息（filter）
-     * @param animals
      */
     public static void showinfo(List<Animal> animals){
         Scanner sc = new Scanner(System.in);
@@ -106,6 +94,7 @@ public class filter {
         Criteria _100m = new Criteria_100m();
         Criteria marathon = new Criteria_marathon();
         Criteria or = new OrCriteria(longjump,marathon);
+        Criteria and = new AndCriteria(longjump,marathon);
 
         System.out.println("请输入想要查看的项目 : 1.highjump 2.longjump 3.100m 4.marathon");
         int num = sc.nextInt();
