@@ -1,7 +1,11 @@
+package animalgames.abstractfactory;
+
 import java.util.Scanner;
+import animalgames.Entry;
 
 public class AbstractFactoryPatternDemo {
-  public static void main(String[] args) {
+  @Entry(title = "创建裁判员")
+  public static void test() {
 
     // 获取动物类型工厂
     AbstractFactory AnimalFactory = FactoryProducer.getFactory("ANIMAL");

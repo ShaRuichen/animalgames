@@ -1,3 +1,5 @@
+package animalgames.abstractfactory;
+
 public class cat implements Animal {
 
   @Override

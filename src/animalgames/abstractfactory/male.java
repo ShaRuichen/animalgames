@@ -1,3 +1,5 @@
+package animalgames.abstractfactory;
+
 public class male implements Fm {
 
   @Override

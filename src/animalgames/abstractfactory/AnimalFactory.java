@@ -1,3 +1,5 @@
+package animalgames.abstractfactory;
+
 public class AnimalFactory extends AbstractFactory {
 
   @Override
