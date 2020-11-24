@@ -1,5 +1,5 @@
-package FACTORY_;
-
+package factory;
+//泳道工厂类
 public class CreatLaneFactory {
     public LANE creatLANE(String LANEType) {
         if (LANEType == null) {
