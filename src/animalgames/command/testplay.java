@@ -4,23 +4,25 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import animalgames.Entry;
 
 public class testplay {
+	@Entry(title = "åŠ¨ç‰©æ¸¸æ³³ï¼Œè·‘æ­¥")
 	public static void test() throws IOException, InterruptedException {
 		System.out.println("##########################################");
-    	System.out.println("#                  ¶¯ÎïÔË¶¯»á¿ªÊ¼£¡                               #");
+    	System.out.println("#                  åŠ¨ç‰©è¿åŠ¨ä¼šå¼€å§‹ï¼                               #");
     	System.out.println("##########################################");
-    	System.out.println("#       ËµÃ÷£ºµ±ÊäÈëÃûµ¥Îª¿ÕÊ±ÎÒÃÇ½«Ê¹ÓÃÄ¬ÈÏÃûµ¥                #");
-    	System.out.println("#       Èç¹ûÏëÊ¹ÓÃÄ¬ÈÏÃûµ¥£¬Çë×¢²áÊ±Ö±½ÓÊäÈë#       #");
+    	System.out.println("#       è¯´æ˜ï¼šå½“è¾“å…¥åå•ä¸ºç©ºæ—¶æˆ‘ä»¬å°†ä½¿ç”¨é»˜è®¤åå•                #");
+    	System.out.println("#       å¦‚æœæƒ³ä½¿ç”¨é»˜è®¤åå•ï¼Œè¯·æ³¨å†Œæ—¶ç›´æ¥è¾“å…¥#       #");
     	System.out.println("##########################################");
     	List<Animal> ru = new ArrayList<Animal>();
     	while(true) {
-	    	System.out.println("Çë×¢²áÈ«ÌåÔË¶¯Ô±!ÇëÊäÈë¶¯ÎïµÄÃû×Ö£¬Èç¹ûÊäÈëÎª#½áÊøÂ¼Èë");
+	    	System.out.println("è¯·æ³¨å†Œå…¨ä½“è¿åŠ¨å‘˜!è¯·è¾“å…¥åŠ¨ç‰©çš„åå­—ï¼Œå¦‚æœè¾“å…¥ä¸º#ç»“æŸå½•å…¥");
 	    	Scanner sca=new Scanner(System.in);
 			String b=sca.next();
 			char bb= b.charAt(0);
 			if(bb=='#')break;
-	    	System.out.println("ÇëÂ¼ÈëĞÅÏ¢!Ñ¡Ôñ¶¯ÎïÀà±ğ£ºÀÏ»¢£¨A£©   Ê¨×Ó£¨B£©   ÍÃ×Ó£¨C£©   Ã¨£¨D£©£¬Èç¹ûÊäÈëÎª#½áÊøÂ¼Èë");
+	    	System.out.println("è¯·å½•å…¥ä¿¡æ¯!é€‰æ‹©åŠ¨ç‰©ç±»åˆ«ï¼šè€è™ï¼ˆAï¼‰   ç‹®å­ï¼ˆBï¼‰   å…”å­ï¼ˆCï¼‰   çŒ«ï¼ˆDï¼‰ï¼Œå¦‚æœè¾“å…¥ä¸º#ç»“æŸå½•å…¥");
 	    	char a = (char)System.in.read();
 	    	if(a=='#') {break;}
 	    	switch(a) {
@@ -41,9 +43,9 @@ public class testplay {
 	    			ru.add(obs3);
 	    			break;
 	    		default:
-	    			System.out.println("ÊäÈë²»·ûºÏ¹æ·¶");
+	    			System.out.println("è¾“å…¥ä¸ç¬¦åˆè§„èŒƒ");
 	    	}
-	    	System.out.println("Íê³É£¡");
+	    	System.out.println("å®Œæˆï¼");
     	}
     	if(ru.size() == 0) {
     		Animal obs1 = new Rabbit("Kitt");
@@ -59,12 +61,12 @@ public class testplay {
     		ru.add(obs5);
     		ru.add(obs6);
     	}
-    	System.out.println("È«ÌåÃûµ¥");
+    	System.out.println("å…¨ä½“åå•");
     	
     	int next=1;
     	for(Animal obs:ru)
         {
-        	System.out.println(obs.getTy()+obs.getName()+"  ºÅÂë"+next);
+        	System.out.println(obs.getTy()+obs.getName()+"  å·ç "+next);
         	next++;
         }
         Observer.tryo(ru,"Swim","Screen");
