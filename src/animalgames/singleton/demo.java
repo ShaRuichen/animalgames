@@ -1,7 +1,8 @@
-package Singleton;
-
-public class demo {
-    public static void main(String[] args) {
+package animalgames.singleton;
+//测试
+public class Test {
+    @Entry(title = "显示名单")
+    public static void test() {
 
         //不合法的构造函数
         //编译时错误：构造函数 SingleObject() 是不可见的
