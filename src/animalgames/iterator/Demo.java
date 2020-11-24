@@ -1,7 +1,8 @@
-package Iterator;
-
-public class Demo {
-    public static void main(String[] args) {
+package animalgames.iterator;
+//获取迭代器，并打印名字
+public class Test {
+    @Entry(title = "显示名单")
+    public static void test() {
         Player namesRepository = new Player();
 
         for(Iterator iter = namesRepository.getIterator(); iter.hasNext();){
