@@ -5,6 +5,7 @@ import animalgames.Entry;
 
 public class AbstractFactoryPatternDemo {
   @Entry(title = "创建裁判员")
+  // 测试函数
   public static void test() {
 
     // 获取动物类型工厂

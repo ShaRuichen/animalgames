@@ -3,6 +3,7 @@ package animalgames.abstractfactory;
 public class AnimalFactory extends AbstractFactory {
 
   @Override
+  // 根据AnimalType来创建对应的animal
   public Animal getAnimal(String AnimalType) {
     if (AnimalType == null) {
       return null;
@@ -24,6 +25,7 @@ public class AnimalFactory extends AbstractFactory {
   }
 
   @Override
+  // 根据fm来创建动物性别
   public Fm getFm(String fm) {
     return null;
   }

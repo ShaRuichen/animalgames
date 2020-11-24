@@ -1,3 +1,5 @@
+package animalgames.builder;
+
 public class secondgym extends place {
 
   @Override
