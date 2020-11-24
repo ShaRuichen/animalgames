@@ -6,6 +6,7 @@ import java.util.Scanner;
  * 对应代理模式的实现，按照选项操作通过代理实现购票以及售票信息查看
  */
 public class Test {
+    @Entry(title = "动物踢足球")
     public static void test(){
         Scanner sc = new Scanner(System.in);
         Ticket ticket = new Proxyticket();
