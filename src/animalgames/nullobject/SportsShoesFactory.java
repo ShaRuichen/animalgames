@@ -1,4 +1,4 @@
-package null_object;
+package animalgames.nullobject;
 
 import java.util.ArrayList;
 import java.util.Iterator;
