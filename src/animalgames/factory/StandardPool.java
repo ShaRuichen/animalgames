@@ -1,5 +1,5 @@
-package FACTORY_;
-
+package factory;
+//创建实现接口的实体类
 public class StandardPool implements LANE{
     @Override
     public void use() {
