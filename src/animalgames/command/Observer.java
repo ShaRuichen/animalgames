@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Observer {
-	//¾ßÌåµÄÖ´ĞĞº¯Êı
+	//å…·ä½“çš„æ‰§è¡Œå‡½æ•°
 	public static void tryo(List<Animal>aa,String j,String i) throws IOException, InterruptedException {
     	Context c=new Context();
     	Race s;
@@ -14,13 +14,13 @@ public class Observer {
     		Racstart a=new Racstart();
     		s = a.new SwimCon();
     		
-    		System.out.println("ÇëÊäÈëÓÎÓ¾²ÎÈü¶ÓÔ±ºÅÂë£¬-1½áÊø£¬Ä¬ÈÏÈ«²¿²ÎÈü£¬ºÅÂëÊı£º1~"+aa.size());
+    		System.out.println("è¯·è¾“å…¥æ¸¸æ³³å‚èµ›é˜Ÿå‘˜å·ç ï¼Œ-1ç»“æŸï¼Œé»˜è®¤å…¨éƒ¨å‚èµ›ï¼Œå·ç æ•°ï¼š1~"+aa.size());
 
     	}
     	else {
     		Racstart a=new Racstart();
     		s = a.new Run();
-    		System.out.println("ÇëÊäÈëÅÜ²½²ÎÈü¶ÓÔ±ºÅÂë£¬-1½áÊø£¬Ä¬ÈÏÈ«²¿²ÎÈü£¬ºÅÂëÊı£º1~"+aa.size());
+    		System.out.println("è¯·è¾“å…¥è·‘æ­¥å‚èµ›é˜Ÿå‘˜å·ç ï¼Œ-1ç»“æŸï¼Œé»˜è®¤å…¨éƒ¨å‚èµ›ï¼Œå·ç æ•°ï¼š1~"+aa.size());
     	}
     	List<Animal> ru1 = new ArrayList<Animal>();
 		while(true) {
@@ -31,7 +31,7 @@ public class Observer {
 				break;
 			}
 			else {
-				System.out.println(ii+"ºÅ¶ÓÔ±Îª"+aa.get(ii-1).getTy()+aa.get(ii-1).getName());
+				System.out.println(ii+"å·é˜Ÿå‘˜ä¸º"+aa.get(ii-1).getTy()+aa.get(ii-1).getName());
 				ru1.add(aa.get(ii-1));
 			}
 		}
@@ -42,10 +42,10 @@ public class Observer {
         {
             s.add((Animal)obs);
         }
-        System.out.println("²ÎÈü¶ÓÔ±ÓĞ£º");
+        System.out.println("å‚èµ›é˜Ÿå‘˜æœ‰ï¼š");
         for(Animal obs:ru1)
         {
-        	System.out.println(obs.getTy()+obs.getName()+"  ºÅÂë:"+obs.item);
+        	System.out.println(obs.getTy()+obs.getName()+"  å·ç :"+obs.item);
         }
         
         System.out.println("Start");
@@ -71,7 +71,7 @@ public class Observer {
         subject.notifyObserver();
         Thread.sleep(1000);
         System.out.println("----------------------------------------"); 
-        System.out.println("°ä½±¿ªÊ¼");
+        System.out.println("é¢å¥–å¼€å§‹");
         Thread.sleep(1000);
         for(Animal obs:ru1)
         {
@@ -83,76 +83,4 @@ public class Observer {
         }
         System.out.println("----------------------------------------");
         }
-	
-	//mainº¯Êı
-    public static void main(String[] args) throws IOException, InterruptedException
-    {
-    	System.out.println("##########################################");
-    	System.out.println("#                  ¶¯ÎïÔË¶¯»á¿ªÊ¼£¡                               #");
-    	System.out.println("##########################################");
-    	System.out.println("#       ËµÃ÷£ºµ±ÊäÈëÃûµ¥Îª¿ÕÊ±ÎÒÃÇ½«Ê¹ÓÃÄ¬ÈÏÃûµ¥                #");
-    	System.out.println("#       Èç¹ûÏëÊ¹ÓÃÄ¬ÈÏÃûµ¥£¬Çë×¢²áÊ±Ö±½ÓÊäÈë#       #");
-    	System.out.println("##########################################");
-    	List<Animal> ru = new ArrayList<Animal>();
-    	while(true) {
-	    	System.out.println("Çë×¢²áÈ«ÌåÔË¶¯Ô±!ÇëÊäÈë¶¯ÎïµÄÃû×Ö£¬Èç¹ûÊäÈëÎª#½áÊøÂ¼Èë");
-	    	Scanner sca=new Scanner(System.in);
-			String b=sca.next();
-			char bb= b.charAt(0);
-			if(bb=='#')break;
-	    	System.out.println("ÇëÂ¼ÈëĞÅÏ¢!Ñ¡Ôñ¶¯ÎïÀà±ğ£ºÀÏ»¢£¨A£©   Ê¨×Ó£¨B£©   ÍÃ×Ó£¨C£©   Ã¨£¨D£©£¬Èç¹ûÊäÈëÎª#½áÊøÂ¼Èë");
-	    	char a = (char)System.in.read();
-	    	if(a=='#') {break;}
-	    	switch(a) {
-	    		case 'A': 
-	    			Animal obs = new Tiger(b);
-	    			ru.add(obs);
-	    			break;
-	    		case 'B': 
-	    			Animal obs1 = new Lion(b);
-	    			ru.add(obs1);
-	    			break;
-	    		case 'C':
-	    			Animal obs2 = new Rabbit(b);
-	    			ru.add(obs2);
-	    			break;
-	    		case 'D':
-	    			Animal obs3 = new Cat(b);
-	    			ru.add(obs3);
-	    			break;
-	    		default:
-	    			System.out.println("ÊäÈë²»·ûºÏ¹æ·¶");
-	    	}
-	    	System.out.println("Íê³É£¡");
-    	}
-    	if(ru.size() == 0) {
-    		Animal obs1 = new Rabbit("Kitt");
-    		Animal obs2 = new Tiger("Amy");
-    		Animal obs3 = new Lion("Blue");
-    		Animal obs4 = new Rabbit("Nice");
-    		Animal obs5 = new Tiger("Ace");
-    		Animal obs6 = new Cat("Hk");
-    		ru.add(obs1);
-    		ru.add(obs2);
-    		ru.add(obs3);
-    		ru.add(obs4);
-    		ru.add(obs5);
-    		ru.add(obs6);
-    	}
-    	System.out.println("È«ÌåÃûµ¥");
-    	
-    	int next=1;
-    	for(Animal obs:ru)
-        {
-        	System.out.println(obs.getTy()+obs.getName()+"  ºÅÂë"+next);
-        	next++;
-        }
-        tryo(ru,"Swim","Screen");
-        tryo(ru,"Run","O");
-        for(Animal obs:ru)
-        {
-        	obs.Summary();
-        }
-//    	Context c=new Context();
-    }
 }
