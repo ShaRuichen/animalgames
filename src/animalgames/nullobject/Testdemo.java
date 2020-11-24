@@ -3,31 +3,30 @@ import java.util.Scanner;
 
 public class Testdemo {
 	public Testdemo(){
-		System.out.println("动物种类有rabbit,deer,cat,tortoise");
-		AnimalBreedFactory.insertBreed("rabbit");
-		AnimalBreedFactory.insertBreed("tortoise");
-		AnimalBreedFactory.insertBreed("deer");
-		AnimalBreedFactory.insertBreed("cat");
-		System.out.println("现在分别创建一个rabbit和一个cat种类的动物对象");
-		AbstractAnimal a1=AnimalBreedFactory.getAnimal("rabbit");
-		AbstractAnimal a2=AnimalBreedFactory.getAnimal("cat");
-		System.out.println(a1.getBreed());
-		System.out.println(a2.getBreed());
-		System.out.println("现在若将deer从物种名单中移除，再创建该对象有如下结果：");
-		AnimalBreedFactory.removeBreed("deer");
-		AbstractAnimal a3=AnimalBreedFactory.getAnimal("deer");
-		System.out.println(a3.getBreed());
-		System.out.println("请输入一个物种名称，将其加入物种名单：");
+		System.out.println("比赛用鞋的种类有钉鞋,篮球鞋,长跑鞋,沙地用鞋");
+		SportsShoesFactory.insert("钉鞋");
+		SportsShoesFactory.insert("篮球鞋");
+		SportsShoesFactory.insert("长跑鞋");
+		SportsShoesFactory.insert("沙地用鞋");
+		System.out.println("现在分别分发一双钉鞋和一双篮球鞋种类的运动鞋");
+		AbstractSportsShoes a1=SportsShoesFactory.get("钉鞋");
+		AbstractSportsShoes a2=SportsShoesFactory.get("篮球鞋");
+		
+		System.out.println("现在若将钉鞋从比赛用鞋名单中移除，再试图分发钉鞋时有如下结果：");
+		SportsShoesFactory.remove("钉鞋");
+		AbstractSportsShoes a3=SportsShoesFactory.get("钉鞋");
+		
+		System.out.println("请输入一个鞋类名称，将其加入比赛用鞋的名单：");
 		Scanner s= new Scanner(System.in);
 		String name=s.next();
-		AnimalBreedFactory.insertBreed(name);
-		System.out.println("请输入一个物种名称，创建该物种的一个动物对象：");
+		SportsShoesFactory.insert(name);
+		System.out.println("请输入一个鞋类名称，分发该类别的比赛用鞋一双：");
 		String name2=s.next();
-		AbstractAnimal a4=AnimalBreedFactory.getAnimal(name2);
-		System.out.println(a4.getBreed());
+		AbstractSportsShoes a4=SportsShoesFactory.get(name2);
+		
 		s.close();
 		
-		//如果在物种列表中删除某个物种，已经创建的该物种对象不会改为null
+		
 	}
 	
 }
