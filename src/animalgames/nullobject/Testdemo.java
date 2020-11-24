@@ -1,8 +1,9 @@
-package null_object;
+package animalgames.nullobject;
 import java.util.Scanner;
-
+import animalgames.Entry;
 public class Testdemo {
-	public Testdemo(){
+	@Entry(title="分发比赛用鞋")
+	public static void Testdemo(){
 		System.out.println("比赛用鞋的种类有钉鞋,篮球鞋,长跑鞋,沙地用鞋");
 		SportsShoesFactory.insert("钉鞋");
 		SportsShoesFactory.insert("篮球鞋");
