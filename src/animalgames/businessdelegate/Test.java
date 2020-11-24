@@ -8,6 +8,7 @@ import java.util.Scanner;
  * test函数，通过选项操作调用类，实现业务代理模式
  */
 public class Test {
+    @Entry(title = "动物踢足球")
     public static void test(){
         List<Score> scores = new ArrayList<Score>();
         BusinessDelegate businessDelegate = new BusinessDelegate();
