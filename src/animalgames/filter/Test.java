@@ -8,6 +8,7 @@ import java.util.Scanner;
  * test实现类，通过对应操作实现对比赛人员信息的录入以及筛选（filter）查看
  */
 public class Test {
+    @Entry(title = "动物踢足球")
     public static void test(){
         List<Animal> animals = new ArrayList<Animal>();
 
