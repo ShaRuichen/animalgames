@@ -1,7 +1,9 @@
-package state;
+package animalgames.state;
 import java.util.Scanner;
+import animalgames.Entry;
 public class Testdemo {
-	public Testdemo() {
+	@Entry(title="控制场馆的顶棚开关")
+	public static void Testdemo() {
 		Venue v =new Venue();
 		System.out.println("示例：");
 		System.out.println("如果现在天气很好：");

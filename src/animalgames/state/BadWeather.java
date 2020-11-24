@@ -1,8 +1,8 @@
-package state;
+package animalgames.state;
 
 public class BadWeather implements Weather {
-
-	public void doAction (Venue v) {
+//坏天气类
+	public void doAction (Venue v) {//关闭顶棚
 		System.out.println("现在天气不适宜");
 		v.setWeather(this);
 		v.closeceiling();
