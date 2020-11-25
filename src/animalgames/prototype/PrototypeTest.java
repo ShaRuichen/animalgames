@@ -1,7 +1,10 @@
 package animalgames.prototype;
 
-public class PrototypePatternDemo {
-    public static void main(String[] args) {
+import animalgames.Entry;
+
+public class PrototypeTest {
+    @Entry(title = "创建观众")
+    public static void test() {
         AudienceCache.loadCache();
 
         //clone语句 根据卖票数audienceNum
