@@ -17,7 +17,6 @@ public class FlyweightTest {
 
     private static String getRandomGameType() {
         // 根据创建比赛的gameType
-        // gameId：gameType存储在工厂中的编号
-        return gameTypes[gameId];
+        return gameTypes[(int)(Math.random()*gameTypes.length)];
     }
 }

@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03ed07-36fd-42ed-b2a1-1cb9c3265934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/animalgames/compositeentity/CompositeentityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animalgames/flyweight/FlyweightTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animalgames/prototype/PrototypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animalgames/compositeentity/ConpositeentityDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animalgames/compositeentity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animalgames/compositeentity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animalgames/flyweight/FlyweightDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animalgames/prototype/PrototypeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animalgames/flyweight/FlyweightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animalgames/flyweight/FlyweightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animalgames/prototype/AudienceCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animalgames/prototype/AudienceCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +83,7 @@
       <updated>1606112724719</updated>
       <workItem from="1606112740107" duration="5844000" />
       <workItem from="1606305123937" duration="769000" />
+      <workItem from="1606330895359" duration="404000" />
     </task>
     <servers />
   </component>
