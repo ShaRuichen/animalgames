@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<className>Yellow</className>
+    <className>Shirt</className>
+</config>
+<!--只需要修改上面两个条目中间的关键字就可以查看不同分类的时装-->
