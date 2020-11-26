@@ -1,20 +1,20 @@
-package animalgames.state;
+package state;
 
 public class Venue {
-	private Weather weather;//天气对象
-	public Venue() {//构造函数
+	private Weather weather;
+	public Venue() {
 		weather=null;
 	}
-	public Weather getWeather() {//返回天气状态
+	public Weather getWeather() {
 		return weather;
 	}
-	public void setWeather(Weather weather) {//对天气状态进行设置
+	public void setWeather(Weather weather) {
 		this.weather=weather;
 	}
-	public void openceiling() {//打开顶棚的操作
+	public void openceiling() {
 		System.out.println("场馆顶棚已经打开");
 	}
-	public void closeceiling() {//关闭场馆顶棚的操作
+	public void closeceiling() {
 		System.out.println("场馆的顶棚已经关闭");
 	}
 }

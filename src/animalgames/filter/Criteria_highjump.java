@@ -1,11 +1,8 @@
-package animalgames.filter;
+package filter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 对应的筛选出满足参加highjump的animal
- */
 public class Criteria_highjump implements Criteria {
     @Override
     public List<Animal> meetCriteria(List<Animal> animals){

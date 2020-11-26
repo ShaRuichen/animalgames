@@ -1,19 +1,14 @@
-package animalgames.proxy;
 
-/**
- * proxy模式，通过Proxyticket代理真正的Ticket
- */
+
 public class Proxyticket implements Ticket {
-    private animalgames.proxy.realticket realticket;
     public int num=0;
-
-
     @Override
     public void sellticket(){
-        realticket.sellticket();
+        System.out.println("购票成功");
+        num++;
     }
     @Override
     public void checkticket(){
-        realticket.checkticket();
+        System.out.println("当前已售票:" + num);
     }
 }

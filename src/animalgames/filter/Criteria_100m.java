@@ -1,11 +1,8 @@
-package animalgames.filter;
+package filter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 对应的筛选出满足参加100m的animal
- */
 public class Criteria_100m implements Criteria {
     @Override
     public List<Animal> meetCriteria(List<Animal> animals){

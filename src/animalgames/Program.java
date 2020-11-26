@@ -22,10 +22,10 @@ public class Program {
 		var out = System.out;
 		var err = System.err;
 		var input = new Scanner(System.in);
-		out.println("\næ¬¢è¿æ¥åˆ°åŠ¨ç‰©è¿åŠ¨ä¼šï¼");
+		out.println("\n»¶Ó­À´µ½¶¯ÎïÔË¶¯»á£¡");
 		out.print(catalog);
 		while (true) {
-			out.print("\nè¯·è¾“å…¥ä¸€é¡¹æ“ä½œå‰é¢çš„åºå·æ¥æ‰§è¡Œè¯¥æ“ä½œï¼š");
+			out.print("\nÇëÊäÈëÒ»Ïî²Ù×÷Ç°ÃæµÄĞòºÅÀ´Ö´ĞĞ¸Ã²Ù×÷£º");
 			var num = input.nextInt();
 			if (num == 0) {
 				break;
@@ -34,8 +34,8 @@ public class Program {
 				try {
 					out.println();
 					entries.get(num - 1).invoke(null);
-					out.println("æ‰§è¡ŒæˆåŠŸã€‚");
-					out.print("è¾“å…¥ä»»æ„å†…å®¹ä»¥ç»§ç»­ï¼š");
+					out.println("Ö´ĞĞ³É¹¦¡£");
+					out.print("ÊäÈëÈÎÒâÄÚÈİÒÔ¼ÌĞø£º");
 					input.next();
 				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
 					e.printStackTrace();
@@ -45,15 +45,15 @@ public class Program {
 				out.print(catalog);
 			}
 			else {
-				err.println("è¾“å…¥çš„å†…å®¹æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
+				err.println("ÊäÈëµÄÄÚÈİÓĞÎó£¬ÇëÖØĞÂÊäÈë¡£");
 			}
 		}
 		input.close();
-		out.println("ç¨‹åºç»“æŸã€‚"); 
+		out.println("³ÌĞò½áÊø¡£");
 	}
 	
 	private static void loadAllEntries() {
-		catalog = "--------------------------------\nä¸‹é¢åˆ—å‡ºäº†æœ¬ç¨‹åºæ‰€èƒ½æ‰§è¡Œçš„æ‰€æœ‰æ“ä½œã€‚\n\t0. é€€å‡ºç¨‹åº\n";
+		catalog = "--------------------------------\nÏÂÃæÁĞ³öÁË±¾³ÌĞòËùÄÜÖ´ĞĞµÄËùÓĞ²Ù×÷¡£\n\t0. ÍË³ö³ÌĞò\n";
 		entries = new ArrayList<Method>(30);
 		try {
 			var loader = Thread.currentThread().getContextClassLoader();

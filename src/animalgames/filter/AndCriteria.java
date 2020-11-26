@@ -1,11 +1,8 @@
-package animalgames.filter;
+package filter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * AndCriteria表示两个条件都满足的一个交集的Creteria
- */
 public class AndCriteria implements Criteria {
     private Criteria criteria1;
     private Criteria criteria2;
@@ -15,9 +12,6 @@ public class AndCriteria implements Criteria {
         this.criteria2 = criteria2;
     }
 
-    /**
-     * 在对应第一个条件满足的情况下的animals的list中再去筛选出满足第二个条件的所有animals
-     */
     @Override
     public List<Animal> meetCriteria(List<Animal> animals){
         List<Animal> firstcriteria = criteria1.meetCriteria(animals);

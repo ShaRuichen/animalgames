@@ -1,10 +1,7 @@
-package animalgames.businessdelegate;
+package BusinessDelegate;
 
 import java.util.List;
 
-/**
- * businessDelegate的实现表示层
- */
 public class Client {
     BusinessDelegate businessDelegate;
 

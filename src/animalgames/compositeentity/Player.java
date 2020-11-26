@@ -16,4 +16,4 @@ public class Player {
 
     public String[] getData(){
         return new String[] {do1.getData(),do2.getData()};
-}}
+}

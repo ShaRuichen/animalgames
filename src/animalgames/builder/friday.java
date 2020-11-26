@@ -1,5 +1,3 @@
-package animalgames.builder;
-
 public class friday extends time {
 
   @Override

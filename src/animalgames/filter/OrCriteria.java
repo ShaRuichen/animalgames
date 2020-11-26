@@ -1,10 +1,7 @@
-package animalgames.filter;
+package filter;
 
 import java.util.List;
 
-/**
- * OrCriteria表示满足两个条件中的一个即可的所有animal集合
- */
 public class OrCriteria implements Criteria {
     private Criteria criteria1;
     private Criteria criteria2;
@@ -13,7 +10,7 @@ public class OrCriteria implements Criteria {
         this.criteria1 = criteria1;
         this.criteria2 = criteria2;
     }
-//将两个对应类进行不重复的合并
+
     @Override
     public List<Animal> meetCriteria(List<Animal> animals){
         List<Animal> firstcriteria = criteria1.meetCriteria(animals);

@@ -1,11 +1,8 @@
-package animalgames.businessdelegate;
+package BusinessDelegate;
 
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * PutService服务实现对比赛结果信息的出入，并存在建立的scores中
- */
 public class PutService implements BusinessService {
 
     @Override

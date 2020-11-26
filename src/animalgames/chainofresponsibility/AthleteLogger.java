@@ -1,7 +1,6 @@
-package animalgames.chainofresponsibility;
+package chain_of_responsibility;
 
 public class AthleteLogger extends AbstractLogger{
-	//运动员的告示板
 	public void write(String message) {
 		System.out.println("Athelete::Logger: " + message);
 	}

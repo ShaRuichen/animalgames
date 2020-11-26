@@ -1,10 +1,9 @@
-package animalgames.businessdelegate;
+package BusinessDelegate;
 
 import java.util.List;
 
 /**
  * BusinessDelegate,连接实现业务服务层和Lookup
- * 通过set来选择需要的对应的代理
  */
 public class BusinessDelegate {
     private BusinessLookup lookup = new BusinessLookup();

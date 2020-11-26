@@ -1,5 +1,5 @@
-package animalgames.iterator;
-//创建接口
+package Iterator;
+
 public interface Iterator {
     public boolean hasNext();
     public Object next();

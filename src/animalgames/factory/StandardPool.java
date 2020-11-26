@@ -1,5 +1,5 @@
-package animalgames.factory;
-//创建实现接口的实体类
+package FACTORY_;
+
 public class StandardPool implements LANE{
     @Override
     public void use() {
