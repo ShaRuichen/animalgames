@@ -1,4 +1,7 @@
 package animalgames.singleton;
+
+import animalgames.Entry;
+
 //测试
 public class Test {
     @Entry(title = "显示名单")

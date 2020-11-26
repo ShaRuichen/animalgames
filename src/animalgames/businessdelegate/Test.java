@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import animalgames.Entry;
+
 /**
  * test函数，通过选项操作调用类，实现业务代理模式
  */

@@ -1,4 +1,7 @@
 package animalgames.iterator;
+
+import animalgames.Entry;
+
 //获取迭代器，并打印名字
 public class Test {
     @Entry(title = "显示名单")

@@ -2,6 +2,8 @@ package animalgames.factory;
 
 import java.util.Scanner;
 
+import animalgames.Entry;
+
 public class Test {
     @Entry(title = "创建游泳赛道")
     public static void test() {

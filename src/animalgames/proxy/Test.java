@@ -2,6 +2,8 @@ package animalgames.proxy;
 
 import java.util.Scanner;
 
+import animalgames.Entry;
+
 /**
  * 对应代理模式的实现，按照选项操作通过代理实现购票以及售票信息查看
  */

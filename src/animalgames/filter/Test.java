@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import animalgames.Entry;
+
 /**
  * test实现类，通过对应操作实现对比赛人员信息的录入以及筛选（filter）查看
  */
