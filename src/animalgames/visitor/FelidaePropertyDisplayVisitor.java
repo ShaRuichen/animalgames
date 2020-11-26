@@ -1,5 +1,6 @@
-package VisitorPattern;
+package animalgames.visitor;
 
+/** a visitor which visits the property class interface and displays a visible feedback. */
 public class FelidaePropertyDisplayVisitor implements FelidaePropertyVisitor{
     @Override
     public void visit(Felidae felidae){
