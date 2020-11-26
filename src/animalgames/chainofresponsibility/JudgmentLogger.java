@@ -1,6 +1,7 @@
-package chain_of_responsibility;
+package animalgames.chainofresponsibility;
 
 public class JudgmentLogger extends AbstractLogger{
+	//²ÃÅĞµÄ¸æÊ¾°å
 	protected void write(String message) {
 		System.out.println("Judgment::Logger: " + message);
 	}

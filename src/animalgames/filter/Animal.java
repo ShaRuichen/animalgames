@@ -1,5 +1,8 @@
-package filter;
+package animalgames.filter;
 
+/**
+ * Animal类，对应动物们的参赛信息，实现对应的getter和setter
+ */
 public class Animal {
 
     private String name;

@@ -1,9 +1,12 @@
-package BusinessDelegate;
+package animalgames.businessdelegate;
 
 import java.util.List;
-import java.util.Scanner;
 
-public class GetService implements BusinessService{
+
+/**
+ * GetService服务实现对比赛结果信息的获得以及输出
+ */
+public class GetService implements BusinessService {
     @Override
     public void doProcessing(List<Score> scores){
         for(Score score:scores){

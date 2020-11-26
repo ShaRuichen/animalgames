@@ -1,3 +1,5 @@
+package animalgames.builder;
+
 public class sunny extends weather {
 
   @Override

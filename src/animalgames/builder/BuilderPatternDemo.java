@@ -1,5 +1,11 @@
+package animalgames.builder;
+
+import animalgames.Entry;
+
 public class BuilderPatternDemo {
-  public static void main(String[] args) {
+  @Entry(title = "生成比赛赛场信息")
+  // 测试函数
+  public static void test() {
     MatchinfBuilder Builder = new MatchinfBuilder();
 
     Matchinf first = Builder.firstmatch();

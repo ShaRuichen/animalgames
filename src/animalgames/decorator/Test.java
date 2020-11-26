@@ -3,7 +3,7 @@ package animalgames.decorator;
 import animalgames.Entry;
 
 public class Test {
-	@Entry(title = "¶¯ÎïÌß×ãÇò")
+	@Entry(title = "åŠ¨ç‰©è¸¢è¶³çƒ")
 	public static void test() {
 		var out = System.out;
 		var tiger = new Tiger();
