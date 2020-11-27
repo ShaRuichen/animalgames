@@ -3,8 +3,8 @@ package animalgames.template;
 import animalgames.Entry;
 
 public class Test {
+	@Entry(title = "创建新的猫科动物")
     public static void test(){
-        @Entry(title = "创建新的猫科动物")
         Felidae newTiger = new Tiger();
         newTiger.initialize();
         newTiger.meow();
@@ -13,4 +13,5 @@ public class Test {
         Felidae newCat = new Cat();
         newCat.meow();
         newCat.play();
+    }
 }
