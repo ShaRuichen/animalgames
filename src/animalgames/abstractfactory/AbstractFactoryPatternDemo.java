@@ -1,7 +1,6 @@
 package animalgames.abstractfactory;
 
 import java.util.Scanner;
-import animalgames.Entry;
 
 public class AbstractFactoryPatternDemo {
   @Entry(title = "创建裁判员")
@@ -25,28 +24,41 @@ public class AbstractFactoryPatternDemo {
     // 获取颜色为 Male 的对象
     Fm fm1 = fmFactory.getFm("MALE");
     Fm fm2 = fmFactory.getFm("FEMALE");
-    System.out.println("All referee:cat,dog,elephant,rabbit,snake,human. input CAT to build cat.");
+    System.out.println("可选择的裁判:cat,dog,elephant,rabbit,snake,human. input CAT to build cat.");
+    System.out.println("请选择：1.输入需要的动物  2.退出");
     Scanner input = new Scanner(System.in);
-    String str = input.next();
+    int option = input.nextInt();
     // 输出结果
-    if (str.equalsIgnoreCase("CAT")) {
-      fm1.fill();
-      Animal1.draw();
-    } else if (str.equalsIgnoreCase("DOG")) {
-      fm2.fill();
-      Animal2.draw();
-    } else if (str.equalsIgnoreCase("ELEPHANT")) {
-      fm1.fill();
-      Animal3.draw();
-    } else if (str.equalsIgnoreCase("RABBIT")) {
-      fm2.fill();
-      Animal4.draw();
-    } else if (str.equalsIgnoreCase("SNAKE")) {
-      fm1.fill();
-      Animal5.draw();
-    } else if (str.equalsIgnoreCase("HUMAN")) {
-      fm2.fill();
-      Animal6.draw();
+    while (true) {
+      if (option == 1) {
+        System.out.println("请输入需要的动物");
+        String str = input.next();
+        if (str.equalsIgnoreCase("CAT")) {
+          fm1.fill();
+          Animal1.draw();
+        } else if (str.equalsIgnoreCase("DOG")) {
+          fm2.fill();
+          Animal2.draw();
+        } else if (str.equalsIgnoreCase("ELEPHANT")) {
+          fm1.fill();
+          Animal3.draw();
+        } else if (str.equalsIgnoreCase("RABBIT")) {
+          fm2.fill();
+          Animal4.draw();
+        } else if (str.equalsIgnoreCase("SNAKE")) {
+          fm1.fill();
+          Animal5.draw();
+        } else if (str.equalsIgnoreCase("HUMAN")) {
+          fm2.fill();
+          Animal6.draw();
+        }
+      } else if (option == 2) {
+        break;
+      } else {
+        System.out.println("请输入正确选项");
+      }
+      System.out.println("请选择：1.输入需要的动物  2.退出");
+      option = input.nextInt();
     }
   }
 }
