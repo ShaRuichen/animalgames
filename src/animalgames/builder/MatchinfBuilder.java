@@ -1,5 +1,8 @@
+package animalgames.builder;
+
 public class MatchinfBuilder {
 
+  // 生成第一个比赛
   public Matchinf firstmatch() {
     Matchinf a = new Matchinf();
     a.addItem(new firstgym());
@@ -8,6 +11,7 @@ public class MatchinfBuilder {
     return a;
   }
 
+  // 生成第二个比赛
   public Matchinf secondmatch() {
     Matchinf a = new Matchinf();
     a.addItem(new secondgym());

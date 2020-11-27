@@ -1,5 +1,5 @@
-package Iterator;
-
+package animalgames.iterator;
+//创建实现了接口的实体类
 public class Player implements Iterable{
     public String names[] = {"Robert" , "John" ,"Julie" , "Lora"};
 

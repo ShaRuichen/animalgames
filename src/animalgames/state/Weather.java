@@ -1,5 +1,5 @@
-package state;
+package animalgames.state;
 
-public interface Weather {
-	public void doAction(Venue v);
+public interface Weather {//父类
+	public void doAction(Venue v);//不同的子类对场馆做不同的操作
 }
