@@ -17,4 +17,12 @@ public class ApplyMaker {
     public void addJumper(){
         jumping.addAnimal();
     }
+
+    public void removeRunner(){
+        running.removeAnimal();
+    }
+
+    public void removeJumper(){
+        jumping.removeAnimal();
+    }
 }
