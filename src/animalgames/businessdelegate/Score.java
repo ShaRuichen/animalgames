@@ -10,8 +10,8 @@ public class Score {
 
     public Score(String id, String rank, String project) {
         this.id = id;
-        this.rank = rank;
         this.project = project;
+        this.rank = rank;
     }
 
     public String getid() {
