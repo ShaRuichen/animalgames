@@ -2,6 +2,8 @@ package animalgames.compositeentity;
 
 import animalgames.Entry;
 
+import java.util.Scanner;
+
 /***
  * 裁判登记比赛成绩
  */
@@ -11,10 +13,18 @@ public class CompositeentityTest {
     public static void test() {
         Referee referee = new Referee();
         // 第一场比赛
-        referee.setData("Score1", "Score2");
+        Scanner first1 = new Scanner(System.in);
+        String firstScore1 = first1.next();
+        Scanner first2 = new Scanner(System.in);
+        String firstScore2 = first2.next();
+        referee.setData(firstScore1, firstScore2);
         referee.printData();
         // 第二场比赛
-        referee.setData("Score1", "Score2");
+        Scanner second1 = new Scanner(System.in);
+        String secondScore1 = second1.next();
+        Scanner second2 = new Scanner(System.in);
+        String secondScore2 = second2.next();
+        referee.setData(secondScore1, secondScore2);
         referee.printData();
     }
 }
