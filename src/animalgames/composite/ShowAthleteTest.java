@@ -1,5 +1,6 @@
 package animalgames.composite;
 
+//测试函数
 public class ShowAthleteTest {
     //输入某参赛队的所有成员信息
     public static void main(String[] args) {
