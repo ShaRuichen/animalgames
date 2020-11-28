@@ -1,5 +1,6 @@
 package animalgames.memento;
 
+//测试函数
 public class SelectionHistoryTest {
     public static void main(String[] args) {
         Originator originator = new Originator();
