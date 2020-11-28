@@ -2,6 +2,8 @@ package animalgames.abstractfactory;
 
 import java.util.Scanner;
 
+import animalgames.Entry;
+
 public class AbstractFactoryPatternDemo {
   @Entry(title = "创建裁判员")
   // 测试函数
