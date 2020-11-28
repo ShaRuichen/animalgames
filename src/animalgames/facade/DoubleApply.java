@@ -1,5 +1,3 @@
-package animalgames.facade;
-
 public class DoubleApply implements Apply {
 
     /*
@@ -7,13 +5,11 @@ public class DoubleApply implements Apply {
     */
     @Override
     public void checkIn(int id){
-        System.out.println("double room" + id + " is applied for guests. Enjoy!");
-        room2.welcome();
+        System.out.println("double room " + id + " is applied for guests. Enjoy!");
     }
 
     @Override
     public void checkOut(int id){
         System.out.println("Guests have checked out from room " + id + ". Thanks for using our service.");
-        room2.checkout();
     }
 }

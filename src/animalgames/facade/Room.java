@@ -1,13 +1,6 @@
-package animalgames.facade;
-
 public abstract class Room {
     protected int roomId;
-    protected bool ifOccupied;
-
-    public room(int id){
-        roomId = id;
-        create();
-    }
+    protected boolean ifOccupied;
 
     public abstract void welcome();
     public abstract void create();

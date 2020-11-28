@@ -1,5 +1,3 @@
-package animalgames.facade;
-
 public class ApplyMaker {
     private Apply singleRoom;
     private Apply doubleRoom;
