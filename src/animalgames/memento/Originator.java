@@ -13,9 +13,9 @@ public class Originator {
 
     public Memento saveStateToMemento(){
         return new Memento(state);
-    }
+    }//保存状态
 
     public void getStateFromMemento(Memento Memento){
         state = Memento.getState();
-    }
+    }//获取状态
 }
