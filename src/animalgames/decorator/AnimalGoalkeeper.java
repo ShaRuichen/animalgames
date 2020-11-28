@@ -5,6 +5,7 @@ public class AnimalGoalkeeper extends AnimalDecorator {
 		super(animal);
 	}
 	
+	// 守门员踢足球
 	@Override
 	public void playFootball() {
 		animal.playFootball();
