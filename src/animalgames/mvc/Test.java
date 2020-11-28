@@ -4,16 +4,16 @@ import animalgames.Entry;
 
 public class Test {
 	// 测试函数
-	@Entry(title = "管理动物信息")
+	@Entry(title = "管理纪念品信息")
 	public static void test() {
-		var model = new Animal();
+		var model = new souvenir();
 		model.setId(100);
 		model.setName("泰哥");
-		var view = new AnimalView();
-		var controller = new AnimalController(model, view);
+		var view = new souvenirView();
+		var controller = new souvenirController(model, view);
 		controller.updateView();
 		System.out.println();
-		controller.setAnimalName("小泰哥");
+		controller.setsouvenirName("小泰哥");
 		controller.updateView();
 	}
 }
