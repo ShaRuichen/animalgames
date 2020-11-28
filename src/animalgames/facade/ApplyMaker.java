@@ -1,28 +1,28 @@
 package animalgames.facade;
 
 public class ApplyMaker {
-    private Apply running;
-    private Apply jumping;
+    private Apply singleRoom;
+    private Apply doubleRoom;
 
     /* the apply-making interface for guest users */
     public ApplyMaker(){
-        running = new RunningApply();
-        jumping = new JumpingApply();
+        doubleRoom = new DoubleApply();
+        singleRoom = new SingleApply();
     }
 
-    public void addRunner(){
-        running.addAnimal();
+    public void checkInSingle(int id){
+        singleRoom.checkIn(id);
     }
 
-    public void addJumper(){
-        jumping.addAnimal();
+    public void checkInDouble(int id){
+        doubleRoom.checkIn(id);
     }
 
-    public void removeRunner(){
-        running.removeAnimal();
+    public void checkOutSingle(int id){
+        singleRoom.checkOut(id);
     }
 
-    public void removeJumper(){
-        jumping.removeAnimal();
+    public void checkOutDouble(int id){
+        doubleRoom.checkOut(id);
     }
 }

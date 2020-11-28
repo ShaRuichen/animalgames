@@ -3,17 +3,20 @@ package animalgames.facade;
 import animalgames.Entry;
 
 public class Test {
-    @Entry(title = "动物申请参加项目")
-    public static void test(String[] args){
+    @Entry(title = "创建客房并为与会人员申请")
+    public static void test(){
         
+        SingleRoom room1 = new SingleRoom(201);
+        DoubleRoom room2 = new DoubleRoom(301);
+
         ApplyMaker appMaker = new ApplyMaker();
 
-        appMaker.addRunner();
-        appMaker.removeRunner();
-        appMaker.addJumper();
-        appMaker.removeRunner();
+        appMaker.checkInSingle(201);
+        appMaker.checkOutSingle(201);
+        appMaker.checkInDouble(301);
+        appMaker.checkOutDouble(301);
     }
     /*
-    *   测试用例
+    *   Testing.
     */
 }

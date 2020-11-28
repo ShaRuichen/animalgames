@@ -2,6 +2,6 @@ package animalgames.facade;
 
 /* interface for applying */
 public interface Apply {
-    void addAnimal();
-    void removeAnimal();
+    void checkIn(int id);
+    void checkOut(int id);
 }
