@@ -1,6 +1,7 @@
 package animalgames.composite;
 
 public class ShowAthleteTest {
+    //输入某参赛队的所有成员信息
     public static void main(String[] args) {
         Athlete Captain = new Athlete("John","领队", 10001);
 
