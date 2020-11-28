@@ -1,9 +1,12 @@
 package animalgames.composite;
 
+import animalgames.Entry;
+
 //测试函数
 public class ShowAthleteTest {
     //输入某参赛队的所有成员信息
-    public static void main(String[] args) {
+	@Entry(title = "展示参赛队明细")
+    public static void test(String[] args) {
         Athlete Captain = new Athlete("John","领队", 10001);
 
         Athlete head1 = new Athlete("Robert","队长", 10002);

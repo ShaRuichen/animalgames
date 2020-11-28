@@ -1,8 +1,11 @@
 package animalgames.memento;
 
+import animalgames.Entry;
+
 //测试函数
 public class SelectionHistoryTest {
-    public static void main(String[] args) {
+	@Entry(title = "展示观赛记录")
+    public static void test(String[] args) {
         Originator originator = new Originator();
         CareTaker careTaker = new CareTaker();
         originator.setState("您已成功选择观赛项目: 田径");
