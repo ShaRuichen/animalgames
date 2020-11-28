@@ -1,3 +1,5 @@
+package animalgames.facade
+
 public abstract class Room {
     protected int roomId;
     protected boolean ifOccupied;

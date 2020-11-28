@@ -1,3 +1,5 @@
+package animalgames.facade
+
 public class DoubleApply implements Apply {
 
     /*

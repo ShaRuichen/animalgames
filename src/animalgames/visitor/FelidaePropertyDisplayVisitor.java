@@ -10,10 +10,13 @@ public class FelidaePropertyDisplayVisitor implements FelidaePropertyVisitor{
     @Override
     public void visit(Profile profile){
         System.out.println("Displaying profile.");
+        System.out.println("Name: " + profile.name);
+        System.out.println("Species: " + profile.species);
     }
 
     @Override
     public void visit(Assignment assignment){
         System.out.println("Displaying assignment.");
+        System.out.println("It's assigned for: " + assignment.assignedComp);
     }
 }

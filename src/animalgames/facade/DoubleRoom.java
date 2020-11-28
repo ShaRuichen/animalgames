@@ -1,3 +1,5 @@
+package animalgames.facade
+
 public class DoubleRoom extends Room {
     public DoubleRoom(int id) {
         roomId = id;
