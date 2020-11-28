@@ -1,6 +1,7 @@
 package animalgames.memento;
 
 import animalgames.Entry;
+import java.util.Scanner;
 
 //测试函数
 public class SelectionHistoryTest {
@@ -20,5 +21,11 @@ public class SelectionHistoryTest {
         System.out.println("最近两次购票记录1: " + originator.getState());
         originator.getStateFromMemento(careTaker.get(1));
         System.out.println("最近两次购票记录2: " + originator.getState());
+	    
+	Scanner s = new Scanner(System.in);
+        System.out.println("请输入您想选择的观赛项目: ");
+        String object=s.next();
+        System.out.println("您已成功选择观赛项目: "+object);
+        System.out.println("您现在的观赛信息为: 您已成功选择观赛项目: "+object);
     }
 }
