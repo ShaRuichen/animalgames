@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f03ed07-36fd-42ed-b2a1-1cb9c3265934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/animalgames/compositeentity/CompositeentityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animalgames/compositeentity/CompositeentityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animalgames/prototype/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animalgames/prototype/PrototypeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1606330895359" duration="404000" />
       <workItem from="1606400318676" duration="50000" />
       <workItem from="1606542348482" duration="84000" />
-      <workItem from="1606568450888" duration="1352000" />
+      <workItem from="1606568450888" duration="2014000" />
     </task>
     <servers />
   </component>

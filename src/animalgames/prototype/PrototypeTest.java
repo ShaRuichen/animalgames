@@ -9,6 +9,7 @@ public class PrototypeTest {
     public static void test() {
         AudienceCache.loadCache();
 
+        System.out.println("请选择比赛项目：1(race) 2(swim) 3(jump)");
         //clone语句 根据卖票数audienceNum
         //这里需要结合卖票数输出
         Scanner s = new Scanner(System.in);
