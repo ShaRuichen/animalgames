@@ -4,7 +4,7 @@ import animalgames.Entry;
 
 //测试
 public class Test {
-    @Entry(title = "显示名单")
+    @Entry(title = "新建足球")
     public static void test() {
 
         //不合法的构造函数
@@ -12,7 +12,7 @@ public class Test {
         //SingleObject object = new SingleObject();
 
         //获取唯一可用的对象
-        PingpongUmpire object = PingpongUmpire.getInstance();
+        football object = football.getInstance();
 
         //显示消息
         object.showMessage();
