@@ -1,10 +1,11 @@
-package TemplatePattern;
+package animalgames.template;
 
+/** specified actions for tigers. */
 public class Tiger extends Felidae {
     
     @Override
     void meow() {
-        System.out.println("MEEOW!!(with tiger style)");
+        System.out.println("MEEOWRR!!(with a roaring tiger style)");
     }
 
     @Override

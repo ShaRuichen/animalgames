@@ -3,6 +3,7 @@ package animalgames.decorator;
 import animalgames.Entry;
 
 public class Test {
+	// 测试函数
 	@Entry(title = "动物踢足球")
 	public static void test() {
 		var out = System.out;

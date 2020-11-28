@@ -1,22 +1,29 @@
 package animalgames.builder;
 
+import java.util.Random;
+
 public class MatchinfBuilder {
 
-  // 生成第一个比赛
   public Matchinf firstmatch() {
     Matchinf a = new Matchinf();
-    a.addItem(new firstgym());
-    a.addItem(new monday());
-    a.addItem(new sunny());
-    return a;
-  }
-
-  // 生成第二个比赛
-  public Matchinf secondmatch() {
-    Matchinf a = new Matchinf();
-    a.addItem(new secondgym());
-    a.addItem(new friday());
-    a.addItem(new rainy());
+    Random rand1 = new Random();
+    if (rand1.nextInt(2) == 0) {
+      a.addItem(new firstgym());
+    } else {
+      a.addItem(new secondgym());
+    }
+    Random rand2 = new Random();
+    if (rand2.nextInt(2) == 0) {
+      a.addItem(new monday());
+    } else {
+      a.addItem(new friday());
+    }
+    Random rand3 = new Random();
+    if (rand3.nextInt(3) == 0) {
+      a.addItem(new sunny());
+    } else {
+      a.addItem(new rainy());
+    }
     return a;
   }
 }

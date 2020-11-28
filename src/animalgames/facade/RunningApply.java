@@ -1,6 +1,10 @@
-package FacadePattern;
+package animalgames.facade;
 
 public class RunningApply implements Apply {
+
+    /*
+    * add a new athlete to a running competition
+    */
     @Override
     public void addAnimal(){
         System.out.println("New Animal is added as a running athlete.");

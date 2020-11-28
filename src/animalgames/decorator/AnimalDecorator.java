@@ -7,6 +7,7 @@ public class AnimalDecorator extends Animal {
 		this.animal = animal;
 	}
 	
+	// 踢足球
 	@Override
 	public void playFootball() {
 		animal.playFootball();

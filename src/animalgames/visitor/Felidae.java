@@ -1,4 +1,4 @@
-package VisitorPattern;
+package animalgames.visitor;
 
 public class Felidae implements FelidaeProperty {
     FelidaeProperty[] props;

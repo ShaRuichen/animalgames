@@ -1,19 +1,8 @@
-package TemplatePattern;
+package animalgames.template;
 
 public class CreateFelidae {
     /*
-    *   测试用 main demo
-    *
-        public static void main(String[] args){
-            Felidae newTiger = new Tiger();
-            newTiger.initialize();
-            newTiger.meow();
-            newTiger.play();
-            System.out.println();
-            Felidae newCat = new Cat();
-            newCat.meow();
-            newCat.play();
-    }
+    * packed function for users.
     */
     public Felidae create(String usage){
         if (usage == "cat"){
